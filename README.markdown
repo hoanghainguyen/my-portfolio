@@ -60,7 +60,7 @@ A responsive portfolio website built with Angular 20 and Tailwind CSS, showcasin
    ng serve
    ```
 2. Open `http://localhost:4200` in your browser to view the portfolio.
-3. Update `src/app/services/project.ts` to add your Vercel-hosted projects:
+3. Update `src/app/services/project.service.ts` to add your Vercel-hosted projects:
    ```typescript
    private projects = signal<Project[]>([
      {
@@ -106,7 +106,7 @@ A responsive portfolio website built with Angular 20 and Tailwind CSS, showcasin
 
 ## Usage
 - **View Projects**: Browse the project grid to see details and visit live Vercel-hosted apps.
-- **Update Projects**: Edit `src/app/services/project.ts` to add or modify projects, then redeploy.
+- **Update Projects**: Edit `src/app/services/project.service.ts` to add or modify projects, then redeploy.
 - **Analytics**: Add Google Analytics in `src/index.html` to track visitor interactions.
 - **SEO**: Update meta tags in `src/index.html` for better search visibility.
 
@@ -142,6 +142,6 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-**Live Demo**: [https://my-portfolio.vercel.app](https://my-portfolio.vercel.app)  
-**GitHub Repository**: [https://github.com/yourusername/my-portfolio](https://github.com/yourusername/my-portfolio)  
+**Live Demo**: [https://my-portfolio.vercel.app](https://my-portfolio.vercel.app)
+**GitHub Repository**: [https://github.com/yourusername/my-portfolio](https://github.com/yourusername/my-portfolio)
 **Contact**: [your.email@example.com](mailto:your.email@example.com) or [LinkedIn](https://linkedin.com/in/yourusername)
