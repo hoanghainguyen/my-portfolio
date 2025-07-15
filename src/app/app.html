@@ -11,14 +11,11 @@
   </section>
   <section>
     <h2 class="text-2xl font-semibold mb-4">Projects</h2>
-
-      <table  border="1" width="100%" >
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       @for (project of projects(); track project.name) {
-
       <app-project-card [project]="project"></app-project-card>
       }
-      </table>
-
+    </div>
   </section>
 </main>
 <app-footer></app-footer>
