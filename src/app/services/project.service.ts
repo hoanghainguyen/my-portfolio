@@ -28,8 +28,8 @@ export class ProjectService {
     {
       name: 'Health Tracker Dashboard',
       description: 'This web is to track your daily health activities including exercise, meditation, and sleep',
-      techStack: ['Python', 'Flask',"Javascript","Posgresql","Neon" ],
-      liveUrl: 'https://name-game-eta.vercel.app/'
+      techStack: ['Python', 'Flask',"Javascript","Posgresql"],
+      liveUrl: 'https://health-tracker-dashboard-rho.vercel.app/'
     }
 
   ]);
