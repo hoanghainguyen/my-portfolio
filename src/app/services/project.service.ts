@@ -24,6 +24,12 @@ export class ProjectService {
       description: 'Name animal and fruit game ',
       techStack: ['Angular', 'Node.js', ],
       liveUrl: 'https://name-game-eta.vercel.app/'
+    },
+    {
+      name: 'Health Tracker Dashboard',
+      description: 'This web is to track your daily health activities including exercise, meditation, and sleep',
+      techStack: ['Python', 'Flask',"Javascript","Posgresql","Neon" ],
+      liveUrl: 'https://name-game-eta.vercel.app/'
     }
 
   ]);
