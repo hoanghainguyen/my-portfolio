@@ -31,6 +31,12 @@ export class ProjectService {
       techStack: ['Python', 'Flask',"Javascript","Posgresql"],
       liveUrl: 'https://health-tracker-dashboard-rho.vercel.app/'
     }
+    {
+      name: 'Simple my-todolist-app',
+      description: 'A Simple todo list application',
+      techStack: ['React', 'Vercel'],
+      liveUrl: 'https://my-todolist-react-three.vercel.app/'
+    }
 
   ]);
     // Add more projects here
