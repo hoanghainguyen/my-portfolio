@@ -22,7 +22,7 @@ export class ProjectService {
     {
       name: 'Name Game',
       description: 'Name animal and fruit game ',
-      techStack: ['Angular', 'Node.js', ],
+      techStack: ['Angular', 'Node.js' ],
       liveUrl: 'https://name-game-eta.vercel.app/'
     },
     {
@@ -30,13 +30,13 @@ export class ProjectService {
       description: 'Track your daily health activities',
       techStack: ['Python', 'Flask',"Javascript","Posgresql"],
       liveUrl: 'https://health-tracker-dashboard-rho.vercel.app/'
-    }
+    },
     {
       name: 'Simple my-todolist-app',
       description: 'A Simple todo list application',
       techStack: ['React', 'Vercel'],
       liveUrl: 'https://my-todolist-react-three.vercel.app/'
-    }
+    },
 
   ]);
     // Add more projects here
