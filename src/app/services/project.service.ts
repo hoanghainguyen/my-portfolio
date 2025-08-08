@@ -37,6 +37,12 @@ export class ProjectService {
       techStack: ['React', 'Vercel'],
       liveUrl: 'https://my-todolist-react-three.vercel.app/'
     },
+     {
+      name: 'Bitcoin  Price Tracker',
+      description: 'This Bitcoin  Price Tracker fetches historical Bitcoin prices by month',
+      techStack: ['React', "Vite", "TailWind",'Vercel'],
+      liveUrl: 'https://bitcoin-price-tracker-gray.vercel.app'
+    },
 
   ]);
     // Add more projects here
