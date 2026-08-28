@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+
+body {
+  background-color: #FAFAF8;
+}
+
+@theme {
+  --color-background: #FAFAF8;
+  --color-surface: #FFFFFF;
+  --color-surface-border: #EAE7E1;
+  --color-ink: #161B29;
+  --color-body: #3F4657;
+  --color-muted: #6E7280;
+  --color-brand: #3B3FA8;
+  --color-brand-hover: #2E3186;
+  --color-tag-bg: #EEEDFB;
+  --color-tag-text: #3B3FA8;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", -apple-system, sans-serif;
+}

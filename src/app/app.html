@@ -3,18 +3,44 @@
 
   <h1 class="text-4xl font-bold text-center mb-8">Live Demos</h1>
 
-  <section class="mb-12">
-    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-    <p class="text-lg">
-      I'm a developer who's never quite finished learning — every new framework is an excuse to build something small, break it, and figure out why. This site is my playground: a growing collection of live demos where you can click in and actually play with pet projects built across different frameworks, no downloads or setup required. Think of it as a running log of "what happens if I try this
+  <section class="mb-16 max-w-3xl mx-auto">
+    <div class="grid grid-cols-[1fr_auto_1fr] items-center mb-4">
+      <h2 class="text-2xl font-semibold text-center text-ink mx-auto">About Me</h2>
+      <div class="flex gap-1 text-xs font-medium">
+        @for (lang of languages; track lang.code) {
+          <button
+            (click)="activeLang.set(lang.code)"
+            class="px-3 py-1 rounded-full transition-colors"
+            [class.bg-brand]="activeLang() === lang.code"
+            [class.text-white]="activeLang() === lang.code"
+            [class.text-muted]="activeLang() !== lang.code"
+            [class.hover:text-ink]="activeLang() !== lang.code">
+            {{ lang.label }}
+          </button>
+        }
+      </div>
+    </div>
+
+    <p class="text-lg text-body leading-relaxed text-center">
+      @switch (activeLang()) {
+        @case ('fr') {
+          Je suis un développeur/architecte qui n'a jamais vraiment fini d'apprendre — chaque nouveau framework est une excuse pour construire quelque chose de petit, le casser, et comprendre pourquoi. Ce site est mon terrain de jeu : une collection grandissante de démos interactifs en direct où vous pouvez cliquer et jouer avec des projets personnels construits dans différents frameworks, sans téléchargement ni installation.
+        }
+        @case ('nl') {
+          Ik ben een ontwikkelaar/architect die nooit uitgeleerd is — elk nieuw framework is een excuus om iets kleins te bouwen, het kapot te maken, en te leren waarom. Deze site is mijn speelplaats: een groeiende verzameling live demo's waar je kunt klikken en spelen met kleine projecten, gebouwd met verschillende frameworks, zonder download of installatie.
+        }
+        @default {
+          I'm a developer/architect who's never quite finished learning — every new framework is an excuse to build something small, break it, and figure out why. This site is my playground: a growing collection of interactive live demos where you can click in and actually play with pet projects built across different frameworks, no downloads or setup required.
+        }
+      }
     </p>
   </section>
   <section>
-    <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+    <h2 class="text-2xl font-semibold mb-6 text-ink">Projects</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
       @for (project of projects(); track project.name) {
-      <app-project-card [project]="project"></app-project-card>
+        <app-project-card [project]="project"></app-project-card>
       }
     </div>
   </section>
