@@ -43,6 +43,12 @@ export class ProjectService {
       techStack: ['React', "Vite", "TailWind",'Vercel'],
       liveUrl: 'https://bitcoin-price-tracker-gray.vercel.app'
     },
+    {
+      name: 'Official Holidays 2026',
+      description: 'Belgian national holidays, filterable by month and exportable',
+      techStack: ['React', "CodeSandBox"],
+      liveUrl: 'https://l4sk2r.csb.app/'
+    }
 
   ]);
     // Add more projects here
